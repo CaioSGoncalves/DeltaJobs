@@ -3,8 +3,7 @@ Scraping Data Engineering jobs from LinkedIn and storing in Delta Lake using Spa
 
 Unified Stream and batch jobs.
 
-Delta:
-- Bronze (Job)  -> Silver (Job + Terms) -> Gold (Agg by Date and Agg by Terms)
-
-
 JobScraper Stream -> Spark -> Delta Lake
+
+Delta:
+- Bronze (Job)  -> Silver (Job + Terms) -> Gold (AggByDate, AggByTerms and AggByCountry)
