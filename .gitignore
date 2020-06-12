@@ -1,3 +1,4 @@
 jobs_scraper/.idea
 jobs_scraper/venv
 key_file.json
+*.pyc

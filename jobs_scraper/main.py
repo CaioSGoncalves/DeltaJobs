@@ -28,7 +28,7 @@ def connect_kafka_producer():
 
 
 def get_artificial_ratings():
-    reader = csv.DictReader(open("artificial_ratings.csv"))
+    reader = csv.DictReader(open("jobs.csv"))
     return [row for row in reader]
 
 
@@ -37,7 +37,7 @@ if __name__ == '__main__':
     kafka_producer = connect_kafka_producer()
 
     for message in get_artificial_ratings():
-        publish_message(kafka_producer, 'movieRatings', "", str(message))
+        publish_message(kafka_producer, 'jobs', "", str(message))
         time.sleep(10)
 
     if kafka_producer is not None:
