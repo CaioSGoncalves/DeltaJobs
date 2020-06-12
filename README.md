@@ -7,3 +7,6 @@ JobScraper Stream -> Spark -> Delta Lake
 
 Delta:
 - Bronze (Job)  -> Silver (Job + Terms) -> Gold (AggByDate, AggByTerms and AggByCountry)
+- Bronze: bronze_job
+- Silver: silver_job and silver_term
+- Gold: gold_jobs_agg_by_date, gold_jobs_agg_by_term, gold_jobs_agg_by_country
