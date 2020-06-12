@@ -5,3 +5,6 @@ Unified Stream and batch jobs.
 
 Delta:
 - Bronze (Job)  -> Silver (Job + Terms) -> Gold (Agg by Date and Agg by Terms)
+
+
+JobScraper Stream -> Spark -> Delta Lake
